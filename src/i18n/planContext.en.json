@@ -1,0 +1,41 @@
+{
+  "planContext": {
+  "title": "Choose your example",
+  "subtitle": "Select age and term matching your needs",
+    "tableHeader": {
+      "age": "Age",
+      "term13": "13 Years (PPT 10)",
+      "term15": "15 Years (PPT 12)",
+      "term17": "17 Years (PPT 14)",
+      "term20": "20 Years (PPT 17)",
+      "term25": "25 Years (PPT 22)"
+    },
+    "summary": {
+      "title": "Your Plan Summary",
+      "age": "Entry Age",
+      "term": "Policy Term",
+      "ppt": "Premium Paying Term",
+      "sumAssured": "Sum Assured",
+  "annualPremium": "Annual premium",
+      "installmentTitle": "Other Payment Options",
+      "installmentHalfYearly": "Half-Yearly",
+      "installmentQuarterly": "Quarterly",
+      "installmentMonthly": "Monthly",
+  "approx": "(approx)",
+  "youPay": "You pay (total)",
+      "youPayDetail": "{{annual}} × {{ppt}} years",
+  "youGet": "Estimated maturity (illustrative)",
+      "youGetBreakdown": "Basic SA + Bonuses",
+      "breakdownBasic": "Basic Sum Assured",
+      "breakdownSimple": "Simple Reversionary Bonus",
+      "breakdownFinal": "Final Additional Bonus",
+      "breakdownTotal": "Total Estimated Maturity",
+  "disclaimer": "Illustrative. Bonuses not guaranteed. Premiums excl. taxes.",
+  "ctaProceed": "Proceed to What-If",
+      "years": "years"
+    },
+    "notAvailable": "N/A",
+    "tap": "Tap to see details",
+    "currency": "₹"
+  }
+}

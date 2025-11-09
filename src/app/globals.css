@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation keyframes */
+@keyframes breathe {
+  0%, 100% { 
+    transform: scale(0.96); 
+    opacity: .7; 
+  }
+  50% { 
+    transform: scale(1.06); 
+    opacity: 1; 
+  }
+}
+
+@keyframes starDriftUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+@keyframes starDriftDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(8px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+/* Utility classes */
+@layer utilities {
+  /* Safe area padding utility */
+  .p-safe {
+    padding-top: max(0px, env(safe-area-inset-top));
+    padding-right: max(0px, env(safe-area-inset-right));
+    padding-bottom: max(0px, env(safe-area-inset-bottom));
+    padding-left: max(0px, env(safe-area-inset-left));
+  }
+
+  .breathing-halo::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    right: -20%;
+    bottom: -20%;
+    background: radial-gradient(circle, rgba(255, 224, 130, 0.8) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: breathe 2.4s ease-in-out infinite;
+    z-index: -1;
+  }
+  
+  .star-drift-up {
+    animation: starDriftUp 16s linear infinite;
+  }
+  
+  .star-drift-down {
+    animation: starDriftDown 16s linear infinite;
+  }
+
+  /* Glassmorphism helpers */
+  .glass {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+  }
+  .glass-strong {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+  }
+  .soft-shadow {
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+  }
+  .ring-gold {
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.55) inset;
+  }
+  .bg-sunrise {
+    background-image: radial-gradient(1200px 600px at 80% -10%, rgba(253, 230, 138, 0.6) 0%, rgba(253, 230, 138, 0) 60%),
+                      radial-gradient(900px 500px at -10% 110%, rgba(251, 191, 36, 0.45) 0%, rgba(251, 191, 36, 0) 60%),
+                      linear-gradient(to bottom, #fff7d6, #fffaf0 40%, #ffffff 100%);
+  }
+  .noise-overlay {
+    position: relative;
+  }
+  .noise-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, rgba(0,0,0,0.015) 1px, transparent 1px, transparent 2px);
+    opacity: .5;
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  }
+  .divider::before,
+  .divider::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(to right, transparent, rgba(251, 191, 36, .7), transparent);
+  }
+}
+
+/* Accessibility - respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .breathing-halo::before,
+  .star-drift-up,
+  .star-drift-down {
+    animation: none;
+  }
+}
+
+/* Custom global styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100svh;
+  /* allow vertical scrolling but prevent horizontal overflow which causes layout breakage */
+  overflow-x: hidden;
+}
+
+body {
+  color: #111827; /* gray-900 */
+  margin: 0;
+  padding: 0;
+  min-height: 100svh;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Slightly reduce base font-size on narrow screens so spacing and labels fit better */
+html, body {
+  font-size: clamp(14px, 3.2vw, 16px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: #2563eb; /* blue-600 */
+  transition: color .2s ease;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e40af; /* blue-800 */
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Global responsive helpers to avoid wrapping and image stretching */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Ensure interactive buttons and chips don't wrap */
+.chip, button, .btn {
+  white-space: nowrap;
+}
+
+/* Gujarati heading style */
+.guj-heading {
+  font-family: 'Noto Sans Gujarati', 'Inter', system-ui, sans-serif;
+}

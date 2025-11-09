@@ -1,0 +1,40 @@
+{
+  "planContext": {
+    "title": "તમારો ઉદાહરણ પસંદ કરો",
+    "subtitle": "તમારી જરૂરિયાત મુજબ ઉંમર અને અવધિ પસંદ કરો",
+    "tableHeader": {
+      "age": "ઉંમર",
+      "term13": "13 વર્ષ (PPT 10)",
+      "term15": "15 વર્ષ (PPT 12)",
+      "term20": "20 વર્ષ (PPT 17)",
+      "term25": "25 વર્ષ (PPT 22)"
+    },
+    "summary": {
+      "title": "તમારો પ્લાન સારાંશ",
+      "age": "પ્રવેશ ઉંમર",
+      "term": "પોલિસી અવધિ",
+      "ppt": "પ્રીમિયમ ભરપાઈ અવધિ",
+      "sumAssured": "સમ એશ્યોર્ડ",
+      "annualPremium": "વાર્ષિક પ્રીમિયમ",
+      "installmentTitle": "અન્ય ભરપાઈ વિકલ્પો",
+      "installmentHalfYearly": "અર્ધવાર્ષિક",
+      "installmentQuarterly": "ત્રૈમાસિક",
+      "installmentMonthly": "માસિક",
+      "approx": "(આશરે)",
+      "youPay": "તમારે કુલ ચૂકવવું",
+      "youPayDetail": "{{annual}} × {{ppt}} વર્ષ",
+      "youGet": "અંદાજિત મૅચ્યુરિટી (રૂપરેખાત્મક)",
+      "youGetBreakdown": "મૂળ SA + બોનસ",
+      "breakdownBasic": "મૂળ સમ એશ્યોર્ડ",
+      "breakdownSimple": "સિમ્પલ રિવર્શનરી બોનસ",
+      "breakdownFinal": "અંતિમ વધારાનો બોનસ",
+      "breakdownTotal": "કુલ અંદાજિત મૅચ્યુરિટી",
+      "disclaimer": "રૂપરેખાત્મક. બોનસ ગેરંટીકૃત નથી. પ્રીમિયમ કર સિવાય દર્શાવવામાં આવ્યા છે.",
+      "ctaProceed": "આગળ 'What-If' જુઓ",
+      "years": "વર્ષ"
+    },
+    "notAvailable": "ઉપલબ્ધ નથી",
+    "tap": "વિગતો જોવા ટેપ કરો",
+    "currency": "₹"
+  }
+  }

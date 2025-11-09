@@ -1,0 +1,16 @@
+{
+  "goalContext": {
+    "chooseExample": "તમારો ઉદાહરણ પસંદ કરો",
+    "ageLabel": "ઉંમર",
+    "termLabel": "અવધિ",
+    "pptLabel": "PPT",
+    "sumAssuredLabel": "મૂળ સમ એશ્યોર્ડ",
+    "annualPremium": "વાર્ષિક પ્રીમિયમ",
+    "totalPaid": "કુલ ચૂકવણી",
+    "estimatedMaturity": "અંદાજિત મેચ્યુરિટી (રૂપરેખાત્મક)",
+    "disclaimer": "રૂપરેખાત્મક. બોનસ ગેરંટીકૃત નથી. પ્રીમિયમ કર સિવાય દર્શાવવામાં આવ્યા છે.",
+    "proceed": "આગળ 'What-If' જુઓ",
+    "currency": "₹",
+    "notAvailable": "ઉપલબ્ધ નથી"
+  }
+}

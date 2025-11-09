@@ -1,0 +1,16 @@
+{
+  "goalContext": {
+    "chooseExample": "Choose your example",
+    "ageLabel": "Age",
+    "termLabel": "Term",
+    "pptLabel": "PPT",
+    "sumAssuredLabel": "Basic Sum Assured",
+    "annualPremium": "Annual Premium",
+    "totalPaid": "Total Paid",
+    "estimatedMaturity": "Estimated Maturity (illustrative)",
+    "disclaimer": "Illustrative only. Bonuses not guaranteed. Premiums exclude taxes.",
+    "proceed": "Proceed to What-If",
+    "currency": "₹",
+    "notAvailable": "N/A"
+  }
+}
